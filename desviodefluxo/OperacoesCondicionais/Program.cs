@@ -34,11 +34,27 @@ namespace OperacoesCondicionais
              Console.WriteLine("Digite outro número:");
            n2 = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Digite outro número:");
-           n3 = double.Parse(Console.ReadLine());
-
-            Console.WriteLine("Digite outro número:");
-           n4 = double.Parse(Console.ReadLine());
+          
+        if(operacao==1)
+        {
+            Console.WriteLine("O resultado da soma é: "+(n1+n2));
+        }
+        else if(operacao==2)
+        {
+            Console.WriteLine("O resultado da subtração é: "+(n1-n2));
+        }
+        else if(operacao==3)
+        {
+            Console.WriteLine("O resultado da multiplicação é: "+(n1*n2));
+        }
+        else if(operacao==4)
+        {
+            Console.WriteLine("O resultado da divisão é: "+(n1/n2));
+        }
+        else
+        {
+            Console.WriteLine("Operação inválida!");
+        }
 
 
         }
